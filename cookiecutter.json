@@ -5,7 +5,7 @@
   "project_name": "My Project",
   "project_slug": "{{ cookiecutter.project_name | slugify }}",
   "module_name": "{{ cookiecutter.project_slug | slugify | replace('-', '_') }}",
-  "project_short_description": "A short summary of the project",
+  "project_short_description": "A short summary of the project",  
   "package_manager": ["conda", "pip", "poetry"],
   "use_notebooks": ["no", "yes"],
   "use_docker": ["no", "yes"],
