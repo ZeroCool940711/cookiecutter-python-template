@@ -1,9 +1,9 @@
 # AT Python Template
 
-[![build](https://img.shields.io/github/actions/workflow/status/at-gmbh/at-python-template/tests-pip.yml?branch=master)](https://github.com/at-gmbh/at-python-template/actions?query=branch%3Amaster+)
+[![build](https://img.shields.io/github/actions/workflow/status/ZeroCool940711/cookiecutter-python-template/tests-pip.yml?branch=master)](https://github.com/ZeroCool940711/cookiecutter-python-template/actions?query=branch%3Amaster+)
 ![Python Version](https://img.shields.io/badge/python-3.8%20--%203.11-blue)
-[![License](https://img.shields.io/github/license/at-gmbh/at-python-template)](https://github.com/at-gmbh/at-python-template/blob/master/LICENSE)
-![GitHub Repo stars](https://img.shields.io/github/stars/at-gmbh/at-python-template?style=social)
+[![License](https://img.shields.io/github/license/ZeroCool940711/cookiecutter-python-template)](https://github.com/ZeroCool940711/cookiecutter-python-template/blob/master/LICENSE)
+![GitHub Repo stars](https://img.shields.io/github/stars/ZeroCool940711/cookiecutter-python-template?style=social)
 
 This is the official Python Project Template of Alexander Thamm GmbH (AT). It is built with [cookiecutter](https://cookiecutter.readthedocs.io/) and inspired by [cookiecutter-data-science](https://github.com/drivendata/cookiecutter-data-science). It is designed to bridge the gap between exploratory work and production-ready projects. The goal is to be able to quickly bootstrap a Python project that provides lots of useful stuff to build, test & deploy your code without being overly convoluted like many of the publicly available packages.
 
@@ -42,7 +42,7 @@ pip install -U "cookiecutter>=2.0"
 Run the following command to generate your project structure.
 
 ```
-cookiecutter https://github.com/at-gmbh/at-python-template
+cookiecutter https://github.com/ZeroCool940711/cookiecutter-python-template
 ```
 After running this command, you will be asked questions like the video below is showing. In the section [Choices explained](#-choices-explained) you can find more information on each item.
 
@@ -179,7 +179,7 @@ Feedback and contributions are very welcome! Learn more in the [Contributing](#-
 
 ## 🤝 Contributing
 
-Contributions to this project are very welcome. Please open a ticket on the [issues page](https://github.com/at-gmbh/at-python-template/issues) if you have found any bugs or if you have ideas for improvements. If you want to contribute code, we'd love to review your [pull request](https://github.com/at-gmbh/at-python-template/pulls)!
+Contributions to this project are very welcome. Please open a ticket on the [issues page](https://github.com/ZeroCool940711/cookiecutter-python-template/issues) if you have found any bugs or if you have ideas for improvements. If you want to contribute code, we'd love to review your [pull request](https://github.com/ZeroCool940711/cookiecutter-python-template/pulls)!
 
 This Readme file contains our technical documentation, a user guide can be found in [Confluence](https://confluence.alexanderthamm.com/display/ATTECH/AT+Python+Template). Please don't hesitate to contact one of the persons listed at the end of this document to get started. Confluence and Teams can only be accessed by AT employees; however, you're very welcome to discuss issues, submit PRs and contact the developers by mail (see below) if you're not an AT employee.
 
