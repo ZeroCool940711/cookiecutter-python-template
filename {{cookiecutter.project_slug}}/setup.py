@@ -4,7 +4,8 @@ from runpy import run_path
 from setuptools import find_packages, setup
 
 # read the program version from version.py (without loading the module)
-__version__ = run_path('src/{{ cookiecutter.module_name }}/version.py')['__version__']
+#__version__ = run_path('src/{{ cookiecutter.module_name }}/version.py')['__version__']
+import versioneer
 
 
 def read(fname):
@@ -14,7 +15,7 @@ def read(fname):
 
 setup(
     name="{{ cookiecutter.project_slug }}",
-    version=__version__,
+    version=versioneer.get_version(),
     author="{{ cookiecutter.full_name }}",
     author_email="{{ cookiecutter.email }}",
     description="{{ cookiecutter.project_short_description }}",
@@ -32,4 +33,5 @@ setup(
     ],
     platforms='any',
     python_requires='>=3.8',
+    cmdclass=versioneer.get_cmdclass(),
 )
