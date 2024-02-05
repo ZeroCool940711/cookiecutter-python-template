@@ -1,0 +1,25 @@
+{
+  "template": "https://github.com/ZeroCool940711/cookiecutter-python-template",
+  "commit": "master",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "full_name": "{{cookiecutter.full_name}}",
+      "company_name": "{{cookiecutter.company_name}}",
+      "email": "{{cookiecutter.email}}",
+      "project_name": "{{cookiecutter.project_name}}",
+      "project_slug": "{{cookiecutter.project_slug}}",
+      "module_name": "{{cookiecutter.module_name}}",
+      "project_short_description": "{{cookiecutter.project_short_description}}",
+      "package_manager": "{{cookiecutter.package_manager}}",
+      "use_notebooks": "{{cookiecutter.use_notebooks}}",
+      "use_docker": "{{cookiecutter.use_docker}}",
+      "ci_pipeline": "{{cookiecutter.ci_pipeline}}",
+      "create_cli": "{{cookiecutter.create_cli}}",
+      "config_file": "{{cookiecutter.config_file}}",
+      "code_formatter": "{{cookiecutter.code_formatter}}",
+      "editor_settings": "{{cookiecutter.editor_settings}}",
+      "_template": "https://github.com/ZeroCool940711/cookiecutter-python-template"
+    }
+  }
+}
