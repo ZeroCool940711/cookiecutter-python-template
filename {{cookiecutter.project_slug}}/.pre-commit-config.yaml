@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: 'v4.4.0'
+    rev: 'v4.5.0'
     hooks:
       - id: check-added-large-files
       - id: check-ast
@@ -11,19 +11,15 @@ repos:
       - id: detect-private-key
       - id: end-of-file-fixer
       - id: mixed-line-ending
-      - id: trailing-whitespace{% if cookiecutter.code_formatter == 'black' %}
+      - id: trailing-whitespace
   - repo: https://github.com/psf/black
-    rev: 'stable'
+    rev: '24.1.1'
     hooks:
       - id: black
-        language_version: python3.8
-        exclude: ^notebooks{% else %}
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 'v0.1.7'
-    hooks:
-      - id: ruff{% endif %}
+        language_version: python3.11
+        exclude: ^notebooks
   - repo: https://github.com/pycqa/isort
-    rev: '5.12.0'
+    rev: '5.13.2'
     hooks:
       - id: isort
   - repo: https://github.com/asottile/pyupgrade
@@ -31,3 +27,7 @@ repos:
     hooks:
       - id: pyupgrade
         args: [ --py38-plus ]
+  -   repo: https://github.com/ikamensh/flynt/
+      rev: ''
+      hooks:
+      -   id: flynt
