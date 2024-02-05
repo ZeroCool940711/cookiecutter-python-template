@@ -28,6 +28,6 @@ repos:
       - id: pyupgrade
         args: [ --py38-plus ]
   -   repo: https://github.com/ikamensh/flynt/
-      rev: ''
+      rev: '1.0.1'
       hooks:
       -   id: flynt
