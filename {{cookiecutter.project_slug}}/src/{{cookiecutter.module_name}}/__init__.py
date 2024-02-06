@@ -9,4 +9,5 @@ __copyright__ = "© {% now 'utc', '%Y' %} {{ cookiecutter.company_name }}"
 {% else -%}
 __copyright__ = "© {% now 'utc', '%Y' %} {{ cookiecutter.full_name }}"
 {% endif %}
-from ._version import __version__
+
+__version__ = "0.0.1"

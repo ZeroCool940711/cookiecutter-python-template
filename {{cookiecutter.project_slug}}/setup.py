@@ -5,8 +5,7 @@ from setuptools import find_packages, setup
 
 # read the program version from version.py (without loading the module)
 #__version__ = run_path('src/{{ cookiecutter.module_name }}/version.py')['__version__']
-import versioneer
-
+from src.{{ cookiecutter.module_name }} import __version__
 
 def read(fname):
     """Utility function to read the README file."""
@@ -15,7 +14,7 @@ def read(fname):
 
 setup(
     name="{{ cookiecutter.project_slug }}",
-    version=versioneer.get_version(),
+    version=__version__,
     author="{{ cookiecutter.full_name }}",
     author_email="{{ cookiecutter.email }}",
     description="{{ cookiecutter.project_short_description }}",
@@ -33,5 +32,4 @@ setup(
     ],
     platforms='any',
     python_requires='>=3.8',
-    cmdclass=versioneer.get_cmdclass(),
 )
