@@ -1,22 +1,49 @@
 {
-  // Avoid vscode getting in trouble by watching too many files at once that we don't want to edit anyway
-  "files.watcherExclude": {
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/.venv/**": true
-  },
-  // Use pytest as our test framework
-  "python.testing.pytestEnabled": true,
-  // Automatically organize imports
-  "editor.codeActionsOnSave": {"source.organizeImports": true},
-  {% if cookiecutter.code_formatter == 'black' %} // Use black as our formatter and run it every time we save a file
-  "python.formatting.provider": "black",
-  // TODO: Insert path to black installation, e.g.:
-  // "python.formatting.blackPath": ".venv/bin/black",
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "ms-python.python"
-  {% endif -%}
-  // Other useful (categories of) settings to look at are
-  // "python.linting"
-  // "autoDocstring.docstringFormat" (requires the "Python Docstring Generator" extension)
+    "github-actions.workflows.pinned.workflows": [
+        ".github/workflows/test.yml",
+        ".github/workflows/tox.yml",
+        ".github/workflows/python-publish.yml"
+    ],
+    // Avoid vscode getting in trouble by watching too many files at once that we don't want to edit anyway
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/.venv/**": true
+    },
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    // Automatically organize imports
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "python.testing.pytestArgs": [
+        "-v",
+        "--cov=src/",
+        "--cov-report=xml",
+        "--cov-report=lcov:lcov.info",
+        "--cov-report=term-missing:skip-covered",
+        "--pdb",
+        "-x",
+        "tests/"
+        //"--picked",
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "*test*.py",
+    ],
+    "sonarlint.connectedMode.project": {
+        "connectionId": "{{cookiecutter.company_name}}_{{cookiecutter.project_slug}}",
+        "projectKey": "{{cookiecutter.company_name}}_{{cookiecutter.project_slug}}"
+    },
+    {% if cookiecutter.code_formatter == 'black' %
+    } // Use black as our formatter and run it every time we save a file
+	"python.formatting.provider": "black",
+    // TODO: Insert path to black installation, e.g.:
+    // "python.formatting.blackPath": ".venv/bin/black",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.python"{% endif -%
+    }
 }
