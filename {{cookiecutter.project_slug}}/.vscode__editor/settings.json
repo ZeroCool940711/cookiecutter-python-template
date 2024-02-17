@@ -38,12 +38,10 @@
         "connectionId": "{{cookiecutter.company_name}}_{{cookiecutter.project_slug}}",
         "projectKey": "{{cookiecutter.company_name}}_{{cookiecutter.project_slug}}"
     },
-    {% if cookiecutter.code_formatter == 'black' %
-    } // Use black as our formatter and run it every time we save a file
+    {% if cookiecutter.code_formatter == 'black' %}
 	"python.formatting.provider": "black",
     // TODO: Insert path to black installation, e.g.:
     // "python.formatting.blackPath": ".venv/bin/black",
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-python.python"{% endif -%
-    }
+    "editor.defaultFormatter": "ms-python.python"{% endif -%}
 }
