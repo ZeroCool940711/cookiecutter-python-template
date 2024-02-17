@@ -1,7 +1,7 @@
 import ctypes
 import os
 
-import muller_idle
+import {{ cookiecutter.module_name}}
 from whoosh import index
 
 from .config.db.Model import Options
@@ -9,7 +9,7 @@ from .config.db.Model import Options
 if not os.path.exists("db"):
     os.mkdir("db")
     
-module_name = {{ cookiecutter.module_name}}
+module_name = "{{ cookiecutter.module_name}}"
 
 APP_ID = f"{{ cookiecutter.module_name}}.{{ cookiecutter.company_name}}.version.{module_name.__version__}"
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(APP_ID)
