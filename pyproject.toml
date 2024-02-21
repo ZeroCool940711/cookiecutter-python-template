@@ -16,7 +16,7 @@ packages = [{ include = "{{cookiecutter.module_name}}", from = "{{cookiecutter.p
 
 [tool.poetry.dependencies]
 python = "^3.8"
-cookiecutter = "^2.3"
+cookiecutter = "^2.6"
 pre-commit = "3.5"
 pytest = "^8.0"
 pytest-mock = "^3.12"
