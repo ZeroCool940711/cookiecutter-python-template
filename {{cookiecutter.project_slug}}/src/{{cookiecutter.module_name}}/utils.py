@@ -4,7 +4,7 @@ import os
 import {{cookiecutter.module_name}}
 from whoosh import index
 
-from .config.db.Model import Options
+from {{cookiecutter.module_name}}.config.db.Model import Options
 
 if not os.path.exists("db"):
     os.mkdir("db")

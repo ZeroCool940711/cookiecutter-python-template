@@ -1,2 +1,7 @@
 # This file defines the requirements for a productive project deployment.
 # It should not contain dependencies for tests, developer tools, etc. (see requirements-dev.txt)
+loguru
+docutils
+pywebview
+git+https://github.com/ZeroCool940711/nicegui.git
+whoosh-reloaded
