@@ -20,7 +20,7 @@ cookiecutter = "^2.6"
 pre-commit = "3.5"
 pytest = "^8.2"
 pytest-mock = "^3.14"
-pyhocon = "^0.3.60"
+pyhocon = "^0.3.61"
 pyyaml = "^6.0"
 typer = "^0.12"
 
