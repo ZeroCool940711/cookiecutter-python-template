@@ -18,7 +18,7 @@ packages = [{ include = "{{cookiecutter.module_name}}", from = "{{cookiecutter.p
 python = "^3.8"
 cookiecutter = "^2.6"
 pre-commit = "3.5"
-pytest = "^8.2"
+pytest = "^8.3"
 pytest-mock = "^3.14"
 pyhocon = "^0.3.61"
 pyyaml = "^6.0"
